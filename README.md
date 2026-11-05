@@ -232,8 +232,7 @@ Os caminhos abaixo integram a documentação original e os arquivos do pacote da
 | [`docs/AEP_1_Entrega_PSE_em_Acao.pdf`](./docs/AEP_1_Entrega_PSE_em_Acao.pdf) | Documento da primeira entrega |
 | [`docs/fluxograma_geral.png`](./docs/fluxograma_geral.png) | Fluxograma geral original, extraído sem alteração do PDF da primeira entrega |
 | [`docs/fluxograma_cadastro_acao.png`](./docs/fluxograma_cadastro_acao.png) | Fluxograma de cadastro original, extraído sem alteração do PDF da primeira entrega |
-| [`docs/AEP_2_Entrega_PSE_em_Acao.pdf`](./docs/AEP_2_Entrega_PSE_em_Acao.pdf) | Versão do documento da segunda entrega, em revisão |
-| [`docs/AEP_2_Entrega_PSE_em_Acao.md`](./docs/AEP_2_Entrega_PSE_em_Acao.md) | Conteúdo editável do documento da segunda entrega |
+| [`docs/AEP_2_Entrega_PSE_em_Acao.pdf`](./docs/AEP_2_Entrega_PSE_em_Acao.pdf) | Documento da segunda entrega |
 | [`docs/casos_de_uso.svg`](./docs/casos_de_uso.svg) | Diagrama de casos de uso |
 | [`docs/fluxograma_geral.svg`](./docs/fluxograma_geral.svg) | Versão revisada do fluxograma geral |
 | [`docs/fluxograma_cadastro.svg`](./docs/fluxograma_cadastro.svg) | Versão revisada do fluxograma de cadastro, parte A |
