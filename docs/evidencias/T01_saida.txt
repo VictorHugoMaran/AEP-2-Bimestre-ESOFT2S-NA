@@ -1,0 +1,56 @@
+PSE em Acao | IntegraPSE | Versao academica 2026/2
+Use somente dados ficticios e coletivos.
+Os dados ficam em memoria e serao perdidos ao encerrar.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: Nenhuma acao cadastrada.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: Nenhuma acao cadastrada.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: Nenhuma acao cadastrada.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 
+--- RESUMO GERAL ---
+Acoes cadastradas: 0
+Planejadas: 0 | Realizadas: 0 | Canceladas: 0
+Previstos em todas as acoes: 0
+Previstos nas realizadas: 0
+Total de participacoes efetivas: 0
+Participacao nas realizadas: N/A (previsao igual a zero).
+Participacoes acumuladas; nao representam estudantes unicos.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: Encerrando o sistema. Dados em memoria descartados.

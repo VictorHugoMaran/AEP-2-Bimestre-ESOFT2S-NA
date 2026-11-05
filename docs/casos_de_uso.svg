@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="475" height="390" preserveAspectRatio="xMinYMin meet" viewBox="0 0 475 390" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="475" height="390"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-390)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="140" y="5" width="330" height="370" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<text x="265.6806640625" y="355" style="font-family: DV; font-size: 12px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,710) scale(1,-1)">PSE em Ação</text>
+			<circle cx="65" cy="235" r="13" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1; fill: none; fill-rule: evenodd;"/>
+			<path d="M 65,222 L 65,175 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 35,205 L 95,205 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 65,175 L 42,145 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<path d="M 65,175 L 88,145 Z" style="stroke: rgb(0%,0%,0%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="36.72119140625" y="123" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,246) scale(1,-1)">Operador da</text>
+			<text x="40.410400390625" y="111" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,222) scale(1,-1)">IntegraPSE</text>
+			<ellipse cx="305.0" cy="315.0" rx="125.0" ry="20.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="257.154541015625" y="312" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,624) scale(1,-1)">UC01 Cadastrar ação</text>
+			<path d="M 97,202 L 180,315 Z" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1;"/>
+			<ellipse cx="305.0" cy="260.0" rx="125.0" ry="20.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="264.405517578125" y="257" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,514) scale(1,-1)">UC02 Listar ações</text>
+			<path d="M 97,202 L 180,260 Z" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1;"/>
+			<ellipse cx="305.0" cy="205.0" rx="125.0" ry="20.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="255.141845703125" y="202" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,404) scale(1,-1)">UC03 Pesquisar ações</text>
+			<path d="M 97,202 L 180,205 Z" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1;"/>
+			<ellipse cx="305.0" cy="150.0" rx="125.0" ry="20.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="251.10107421875" y="147" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,294) scale(1,-1)">UC04 Atualizar situação</text>
+			<path d="M 97,202 L 180,150 Z" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1;"/>
+			<ellipse cx="305.0" cy="95.0" rx="125.0" ry="20.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="260.31201171875" y="92" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,184) scale(1,-1)">UC05 Gerar resumo</text>
+			<path d="M 97,202 L 180,95 Z" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1;"/>
+			<ellipse cx="305.0" cy="40.0" rx="125.0" ry="20.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="255.418701171875" y="37" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,74) scale(1,-1)">UC06 Encerrar sessão</text>
+			<path d="M 97,202 L 180,40 Z" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1;"/>
+		</g>
+	</g>
+</svg>

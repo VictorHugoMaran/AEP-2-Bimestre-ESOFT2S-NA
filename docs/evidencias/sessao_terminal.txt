@@ -1,0 +1,171 @@
+PSE em Acao | IntegraPSE | Versao academica 2026/2
+Use somente dados ficticios e coletivos.
+Os dados ficam em memoria e serao perdidos ao encerrar.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 1
+
+--- CADASTRAR ACAO ---
+Codigo (positivo): 101
+Escola: Escola Horizonte
+Tema: Saude bucal
+Data prevista (DD/MM/AAAA): 10/10/2026
+Publico-alvo (coletivo): Turmas do 6 ano
+Responsavel (ficticio): Equipe IntegraPSE
+Participantes previstos: 40
+Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: 1
+Sucesso: acao cadastrada. Retornando ao menu.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 2
+
+--- LISTAGEM: 1 ACAO(OES) ---
+------------------------------------------------------------
+Codigo: 101 | Situacao: Planejada
+Escola: Escola Horizonte
+Tema: Saude bucal
+Data prevista: 10/10/2026
+Publico-alvo: Turmas do 6 ano
+Responsavel: Equipe IntegraPSE
+Previstos: 40 | Efetivos: 0
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 3
+Pesquisar [1 Codigo / 2 Escola / 3 Tema]: 2
+Termo da pesquisa: horizonte
+------------------------------------------------------------
+Codigo: 101 | Situacao: Planejada
+Escola: Escola Horizonte
+Tema: Saude bucal
+Data prevista: 10/10/2026
+Publico-alvo: Turmas do 6 ano
+Responsavel: Equipe IntegraPSE
+Previstos: 40 | Efetivos: 0
+Encontradas: 1 acao(oes).
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 4
+Codigo para atualizar: 101
+------------------------------------------------------------
+Codigo: 101 | Situacao: Planejada
+Escola: Escola Horizonte
+Tema: Saude bucal
+Data prevista: 10/10/2026
+Publico-alvo: Turmas do 6 ano
+Responsavel: Equipe IntegraPSE
+Previstos: 40 | Efetivos: 0
+Nova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: 2
+Participantes efetivos: 32
+Sucesso: situacao atualizada. Fora de Realizada, efetivos ficam em zero.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 5
+
+--- RESUMO GERAL ---
+Acoes cadastradas: 1
+Planejadas: 0 | Realizadas: 1 | Canceladas: 0
+Previstos em todas as acoes: 40
+Previstos nas realizadas: 40
+Total de participacoes efetivas: 32
+Participacao nas realizadas: 80.00%
+Participacoes acumuladas; nao representam estudantes unicos.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 1
+
+--- CADASTRAR ACAO ---
+Codigo (positivo): 102
+Escola: Escola Aurora
+Tema: Atividade fisica
+Data prevista (DD/MM/AAAA): 15/10/2026
+Publico-alvo (coletivo): Turmas do 7 ano
+Responsavel (ficticio): Equipe Aurora
+Participantes previstos: 20
+Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: 1
+Sucesso: acao cadastrada. Retornando ao menu.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 1
+
+--- CADASTRAR ACAO ---
+Codigo (positivo): 103
+Escola: Escola Jardim
+Tema: Alimentacao saudavel
+Data prevista (DD/MM/AAAA): 20/10/2026
+Publico-alvo (coletivo): Turmas do 8 ano
+Responsavel (ficticio): Equipe Jardim
+Participantes previstos: 10
+Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: 3
+Sucesso: acao cadastrada. Retornando ao menu.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 5
+
+--- RESUMO GERAL ---
+Acoes cadastradas: 3
+Planejadas: 1 | Realizadas: 1 | Canceladas: 1
+Previstos em todas as acoes: 70
+Previstos nas realizadas: 40
+Total de participacoes efetivas: 32
+Participacao nas realizadas: 80.00%
+Participacoes acumuladas; nao representam estudantes unicos.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 7
+Erro: informe um inteiro entre 1 e 6.
+Opcao: 6
+Encerrando o sistema. Dados em memoria descartados.

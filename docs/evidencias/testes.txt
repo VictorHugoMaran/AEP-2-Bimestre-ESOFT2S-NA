@@ -1,0 +1,30 @@
+T01 | PASSOU | Base vazia: listar, pesquisar, atualizar e resumir
+T02 | PASSOU | Cadastro planejado e listagem completa
+T03 | PASSOU | Cadastro realizado solicita efetivos
+T04 | PASSOU | Cadastro cancelado zera efetivos
+T05 | PASSOU | Codigo duplicado exige outro identificador
+T06 | PASSOU | Pesquisa exata por codigo e registro ausente
+T07 | PASSOU | Pesquisa parcial por escola retorna todos os resultados
+T08 | PASSOU | Pesquisa parcial por tema
+T09 | PASSOU | Atualiza para realizada e corrige efetivos
+T10 | PASSOU | Atualizacao de codigo inexistente
+T11 | PASSOU | Realizada para cancelada e planejada elimina efetivos
+T12 | PASSOU | Resumo misto: percentual so das realizadas
+T13 | PASSOU | Previsao zero evita divisao por zero
+T14 | PASSOU | Participacao superior ao previsto permitida
+T15 | PASSOU | Menu rejeita texto, decimal, lixo e inteiro excessivo
+T16 | PASSOU | Campos vazios, quantidade negativa e situacao invalida
+T17 | PASSOU | Datas impossiveis e ano nao bissexto
+T18 | PASSOU | Campo longo recusado sem contaminar a proxima entrada
+T19 | PASSOU | 100 registros aceitos; tentativa 101 bloqueada
+T20 | PASSOU | EOF no cadastro encerra sem confirmar
+T21 | PASSOU | Somas de grandes quantidades sem overflow de int
+T22 | PASSOU | Limite exato de texto (100 bytes) aceito
+T23 | PASSOU | Quantidade efetiva negativa exige correcao
+T24 | PASSOU | Codigo zero ou negativo e submenu invalido
+T25 | PASSOU | Pesquisa vazia e sem correspondencia
+T26 | PASSOU | Nova execucao inicia sem os dados da anterior
+T27 | PASSOU | Datas de seculos e formato estrito
+T28 | PASSOU | EOF em atualizacao incompleta encerra
+T29 | PASSOU | Percentual agregado ponderado entre realizadas
+T30 | PASSOU | Realizada retorna diretamente para planejada

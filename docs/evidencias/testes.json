@@ -1,0 +1,832 @@
+{
+  "status": "CONCLUIDO",
+  "executado_em_utc": "2026-10-13T17:17:50.289057+00:00",
+  "codigo_sha256": "8c1d267b726897218db5d11f947a134a012d9302f22c0bd45125ce88d35486fe",
+  "ambiente": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "compilador": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "flags": "-std=c11 -Wall -Wextra -Wpedantic -Werror",
+  "total": 30,
+  "testes": [
+    {
+      "id": "T01",
+      "cenario": "Base vazia: listar, pesquisar, atualizar e resumir",
+      "entrada": "2\n3\n4\n5\n6\n",
+      "esperado": [
+        "Nenhuma acao cadastrada.",
+        "Acoes cadastradas: 0",
+        "N/A"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Nenhuma acao cadastrada.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Nenhuma acao cadastrada.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Nenhuma acao cadastrada.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 0\nPlanejadas: 0 | Realizadas: 0 | Canceladas: 0\nPrevistos em todas as acoes: 0\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "Nenhuma acao cadastrada.": 3
+      },
+      "contagens_observadas": {
+        "Nenhuma acao cadastrada.": 3
+      },
+      "verificacoes": [
+        {
+          "texto": "Nenhuma acao cadastrada.",
+          "presente": true
+        },
+        {
+          "texto": "Acoes cadastradas: 0",
+          "presente": true
+        },
+        {
+          "texto": "N/A",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T02",
+      "cenario": "Cadastro planejado e listagem completa",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n2\n6\n",
+      "esperado": [
+        "Codigo: 101 | Situacao: Planejada",
+        "Publico-alvo: Turmas do 6 ano",
+        "Previstos: 40 | Efetivos: 0"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Codigo: 101 | Situacao: Planejada",
+          "presente": true
+        },
+        {
+          "texto": "Publico-alvo: Turmas do 6 ano",
+          "presente": true
+        },
+        {
+          "texto": "Previstos: 40 | Efetivos: 0",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T03",
+      "cenario": "Cadastro realizado solicita efetivos",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n2\n32\n5\n6\n",
+      "esperado": [
+        "Realizadas: 1",
+        "Total de participacoes efetivas: 32",
+        "80.00%"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 0 | Realizadas: 1 | Canceladas: 0\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 40\nTotal de participacoes efetivas: 32\nParticipacao nas realizadas: 80.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Realizadas: 1",
+          "presente": true
+        },
+        {
+          "texto": "Total de participacoes efetivas: 32",
+          "presente": true
+        },
+        {
+          "texto": "80.00%",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T04",
+      "cenario": "Cadastro cancelado zera efetivos",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n3\n2\n6\n",
+      "esperado": [
+        "Situacao: Cancelada",
+        "Efetivos: 0"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Cancelada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Situacao: Cancelada",
+          "presente": true
+        },
+        {
+          "texto": "Efetivos: 0",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T05",
+      "cenario": "Codigo duplicado exige outro identificador",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n101\n102\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n5\n6\n",
+      "esperado": [
+        "codigo ja cadastrado",
+        "Acoes cadastradas: 2"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Erro: codigo ja cadastrado. Informe outro codigo.\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 2\nPlanejadas: 2 | Realizadas: 0 | Canceladas: 0\nPrevistos em todas as acoes: 80\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "codigo ja cadastrado",
+          "presente": true
+        },
+        {
+          "texto": "Acoes cadastradas: 2",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T06",
+      "cenario": "Pesquisa exata por codigo e registro ausente",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n3\n1\n101\n3\n1\n999\n6\n",
+      "esperado": [
+        "Encontradas: 1",
+        "Nenhuma acao encontrada."
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Pesquisar [1 Codigo / 2 Escola / 3 Tema]: Codigo: ------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nEncontradas: 1 acao(oes).\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Pesquisar [1 Codigo / 2 Escola / 3 Tema]: Codigo: Nenhuma acao encontrada.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Encontradas: 1",
+          "presente": true
+        },
+        {
+          "texto": "Nenhuma acao encontrada.",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T07",
+      "cenario": "Pesquisa parcial por escola retorna todos os resultados",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n102\nEscola Horizonte II\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n3\n2\nhORIZONTE\n6\n",
+      "esperado": [
+        "Encontradas: 2"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Pesquisar [1 Codigo / 2 Escola / 3 Tema]: Termo da pesquisa: ------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n------------------------------------------------------------\nCodigo: 102 | Situacao: Planejada\nEscola: Escola Horizonte II\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nEncontradas: 2 acao(oes).\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Encontradas: 2",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T08",
+      "cenario": "Pesquisa parcial por tema",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n3\n3\nBUCAL\n6\n",
+      "esperado": [
+        "Encontradas: 1"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Pesquisar [1 Codigo / 2 Escola / 3 Tema]: Termo da pesquisa: ------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nEncontradas: 1 acao(oes).\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Encontradas: 1",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T09",
+      "cenario": "Atualiza para realizada e corrige efetivos",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n4\n101\n2\n32\n4\n101\n2\n36\n5\n6\n",
+      "esperado": [
+        "Total de participacoes efetivas: 36",
+        "90.00%"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: ------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nNova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: situacao atualizada. Fora de Realizada, efetivos ficam em zero.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: ------------------------------------------------------------\nCodigo: 101 | Situacao: Realizada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 32\nNova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: situacao atualizada. Fora de Realizada, efetivos ficam em zero.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 0 | Realizadas: 1 | Canceladas: 0\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 40\nTotal de participacoes efetivas: 36\nParticipacao nas realizadas: 90.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Total de participacoes efetivas: 36",
+          "presente": true
+        },
+        {
+          "texto": "90.00%",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T10",
+      "cenario": "Atualizacao de codigo inexistente",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n4\n999\n5\n6\n",
+      "esperado": [
+        "Registro inexistente.",
+        "Planejadas: 1"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: Registro inexistente.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 1 | Realizadas: 0 | Canceladas: 0\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Registro inexistente.",
+          "presente": true
+        },
+        {
+          "texto": "Planejadas: 1",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T11",
+      "cenario": "Realizada para cancelada e planejada elimina efetivos",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n2\n32\n4\n101\n3\n5\n4\n101\n1\n5\n6\n",
+      "esperado": [
+        "Canceladas: 1",
+        "Planejadas: 1",
+        "Total de participacoes efetivas: 0"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: ------------------------------------------------------------\nCodigo: 101 | Situacao: Realizada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 32\nNova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: situacao atualizada. Fora de Realizada, efetivos ficam em zero.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 0 | Realizadas: 0 | Canceladas: 1\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: ------------------------------------------------------------\nCodigo: 101 | Situacao: Cancelada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nNova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: situacao atualizada. Fora de Realizada, efetivos ficam em zero.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 1 | Realizadas: 0 | Canceladas: 0\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Canceladas: 1",
+          "presente": true
+        },
+        {
+          "texto": "Planejadas: 1",
+          "presente": true
+        },
+        {
+          "texto": "Total de participacoes efetivas: 0",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T12",
+      "cenario": "Resumo misto: percentual so das realizadas",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n2\n32\n1\n102\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n20\n1\n1\n103\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n10\n3\n5\n6\n",
+      "esperado": [
+        "Planejadas: 1 | Realizadas: 1 | Canceladas: 1",
+        "Previstos em todas as acoes: 70",
+        "Previstos nas realizadas: 40",
+        "80.00%"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 3\nPlanejadas: 1 | Realizadas: 1 | Canceladas: 1\nPrevistos em todas as acoes: 70\nPrevistos nas realizadas: 40\nTotal de participacoes efetivas: 32\nParticipacao nas realizadas: 80.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Planejadas: 1 | Realizadas: 1 | Canceladas: 1",
+          "presente": true
+        },
+        {
+          "texto": "Previstos em todas as acoes: 70",
+          "presente": true
+        },
+        {
+          "texto": "Previstos nas realizadas: 40",
+          "presente": true
+        },
+        {
+          "texto": "80.00%",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T13",
+      "cenario": "Previsao zero evita divisao por zero",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n0\n2\n5\n5\n6\n",
+      "esperado": [
+        "Total de participacoes efetivas: 5",
+        "N/A"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 0 | Realizadas: 1 | Canceladas: 0\nPrevistos em todas as acoes: 0\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 5\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Total de participacoes efetivas: 5",
+          "presente": true
+        },
+        {
+          "texto": "N/A",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T14",
+      "cenario": "Participacao superior ao previsto permitida",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n10\n2\n12\n5\n6\n",
+      "esperado": [
+        "120.00%"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 0 | Realizadas: 1 | Canceladas: 0\nPrevistos em todas as acoes: 10\nPrevistos nas realizadas: 10\nTotal de participacoes efetivas: 12\nParticipacao nas realizadas: 120.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "120.00%",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T15",
+      "cenario": "Menu rejeita texto, decimal, lixo e inteiro excessivo",
+      "entrada": "abc\n1.5\n2abc\n9999999999999999999999999\n0\n7\n6\n",
+      "esperado": [
+        "Erro: informe um inteiro",
+        "Encerrando o sistema."
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Erro: informe um inteiro entre 1 e 6.\nOpcao: Erro: informe um inteiro entre 1 e 6.\nOpcao: Erro: informe um inteiro entre 1 e 6.\nOpcao: Erro: informe um inteiro entre 1 e 6.\nOpcao: Erro: informe um inteiro entre 1 e 6.\nOpcao: Erro: informe um inteiro entre 1 e 6.\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "Erro: informe um inteiro": 6
+      },
+      "contagens_observadas": {
+        "Erro: informe um inteiro": 6
+      },
+      "verificacoes": [
+        {
+          "texto": "Erro: informe um inteiro",
+          "presente": true
+        },
+        {
+          "texto": "Encerrando o sistema.",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T16",
+      "cenario": "Campos vazios, quantidade negativa e situacao invalida",
+      "entrada": "1\n101\n\n   \nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n-1\n40\n0\n4\n1\n2\n6\n",
+      "esperado": [
+        "campo obrigatorio vazio",
+        "Erro: informe um inteiro",
+        "Previstos: 40 | Efetivos: 0"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Erro: campo obrigatorio vazio.\nEscola: Erro: campo obrigatorio vazio.\nEscola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Erro: informe um inteiro entre 0 e 2147483647.\nParticipantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Erro: informe um inteiro entre 1 e 3.\nSituacao [1 Planejada / 2 Realizada / 3 Cancelada]: Erro: informe um inteiro entre 1 e 3.\nSituacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "campo obrigatorio vazio": 2,
+        "Erro: informe um inteiro": 3
+      },
+      "contagens_observadas": {
+        "campo obrigatorio vazio": 2,
+        "Erro: informe um inteiro": 3
+      },
+      "verificacoes": [
+        {
+          "texto": "campo obrigatorio vazio",
+          "presente": true
+        },
+        {
+          "texto": "Erro: informe um inteiro",
+          "presente": true
+        },
+        {
+          "texto": "Previstos: 40 | Efetivos: 0",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T17",
+      "cenario": "Datas impossiveis e ano nao bissexto",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n31/04/2026\n29/02/2026\n29/02/2028\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n2\n6\n",
+      "esperado": [
+        "data invalida",
+        "Data prevista: 29/02/2028"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Erro: data invalida. Use DD/MM/AAAA e uma data existente.\nData prevista (DD/MM/AAAA): Erro: data invalida. Use DD/MM/AAAA e uma data existente.\nData prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 29/02/2028\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "data invalida": 2
+      },
+      "contagens_observadas": {
+        "data invalida": 2
+      },
+      "verificacoes": [
+        {
+          "texto": "data invalida",
+          "presente": true
+        },
+        {
+          "texto": "Data prevista: 29/02/2028",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T18",
+      "cenario": "Campo longo recusado sem contaminar a proxima entrada",
+      "entrada": "1\n101\nXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n2\n6\n",
+      "esperado": [
+        "texto muito longo",
+        "Escola: Escola Horizonte"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Erro: texto muito longo. Limite: 100 bytes.\nEscola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "texto muito longo",
+          "presente": true
+        },
+        {
+          "texto": "Escola: Escola Horizonte",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T19",
+      "cenario": "100 registros aceitos; tentativa 101 bloqueada",
+      "entrada": "1\n1\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n2\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n3\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n4\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n5\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n6\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n7\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n8\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n9\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n10\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n11\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n12\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n13\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n14\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n15\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n16\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n17\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n18\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n19\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n20\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n21\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n22\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n23\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n24\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n25\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n26\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n27\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n28\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n29\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n30\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n31\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n32\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n33\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n34\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n35\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n36\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n37\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n38\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n39\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n40\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n41\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n42\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n43\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n44\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n45\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n46\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n47\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n48\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n49\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n50\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n51\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n52\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n53\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n54\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n55\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n56\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n57\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n58\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n59\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n60\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n61\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n62\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n63\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n64\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n65\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n66\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n67\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n68\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n69\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n70\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n71\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n72\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n73\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n74\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n75\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n76\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n77\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n78\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n79\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n80\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n81\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n82\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n83\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n84\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n85\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n86\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n87\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n88\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n89\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n90\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n91\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n92\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n93\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n94\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n95\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n96\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n97\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n98\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n99\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n100\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n1\n5\n6\n",
+      "esperado": [
+        "Limite de armazenamento atingido",
+        "Acoes cadastradas: 100"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Limite de armazenamento atingido (100 acoes). Cadastro nao iniciado.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 100\nPlanejadas: 100 | Realizadas: 0 | Canceladas: 0\nPrevistos em todas as acoes: 4000\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Limite de armazenamento atingido",
+          "presente": true
+        },
+        {
+          "texto": "Acoes cadastradas: 100",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T20",
+      "cenario": "EOF no cadastro encerra sem confirmar",
+      "entrada": "1\n101\n",
+      "esperado": [
+        "Operacao incompleta nao confirmada"
+      ],
+      "ausencias_esperadas": [
+        "Sucesso: acao cadastrada"
+      ],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: \nEntrada encerrada (EOF). Operacao incompleta nao confirmada; sistema encerrado.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Operacao incompleta nao confirmada",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T21",
+      "cenario": "Somas de grandes quantidades sem overflow de int",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n2147483647\n2\n2147483647\n1\n102\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n2147483647\n2\n2147483647\n5\n6\n",
+      "esperado": [
+        "Total de participacoes efetivas: 4294967294",
+        "100.00%"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 2\nPlanejadas: 0 | Realizadas: 2 | Canceladas: 0\nPrevistos em todas as acoes: 4294967294\nPrevistos nas realizadas: 4294967294\nTotal de participacoes efetivas: 4294967294\nParticipacao nas realizadas: 100.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Total de participacoes efetivas: 4294967294",
+          "presente": true
+        },
+        {
+          "texto": "100.00%",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T22",
+      "cenario": "Limite exato de texto (100 bytes) aceito",
+      "entrada": "1\n101\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n2\n6\n",
+      "esperado": [
+        "Escola: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      ],
+      "ausencias_esperadas": [
+        "texto muito longo"
+      ],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Escola: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T23",
+      "cenario": "Quantidade efetiva negativa exige correcao",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n2\n-3\n32\n5\n6\n",
+      "esperado": [
+        "Erro: informe um inteiro",
+        "Total de participacoes efetivas: 32"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Erro: informe um inteiro entre 0 e 2147483647.\nParticipantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 0 | Realizadas: 1 | Canceladas: 0\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 40\nTotal de participacoes efetivas: 32\nParticipacao nas realizadas: 80.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Erro: informe um inteiro",
+          "presente": true
+        },
+        {
+          "texto": "Total de participacoes efetivas: 32",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T24",
+      "cenario": "Codigo zero ou negativo e submenu invalido",
+      "entrada": "1\n0\n-1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n3\n9\n1\n101\n6\n",
+      "esperado": [
+        "Erro: informe um inteiro",
+        "Encontradas: 1"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Erro: informe um inteiro entre 1 e 2147483647.\nCodigo (positivo): Erro: informe um inteiro entre 1 e 2147483647.\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Pesquisar [1 Codigo / 2 Escola / 3 Tema]: Erro: informe um inteiro entre 1 e 3.\nPesquisar [1 Codigo / 2 Escola / 3 Tema]: Codigo: ------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nEncontradas: 1 acao(oes).\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "Erro: informe um inteiro": 3
+      },
+      "contagens_observadas": {
+        "Erro: informe um inteiro": 3
+      },
+      "verificacoes": [
+        {
+          "texto": "Erro: informe um inteiro",
+          "presente": true
+        },
+        {
+          "texto": "Encontradas: 1",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T25",
+      "cenario": "Pesquisa vazia e sem correspondencia",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n3\n2\n\n   \nInexistente\n6\n",
+      "esperado": [
+        "campo obrigatorio vazio",
+        "Nenhuma acao encontrada."
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Pesquisar [1 Codigo / 2 Escola / 3 Tema]: Termo da pesquisa: Erro: campo obrigatorio vazio.\nTermo da pesquisa: Erro: campo obrigatorio vazio.\nTermo da pesquisa: Nenhuma acao encontrada.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "campo obrigatorio vazio": 2
+      },
+      "contagens_observadas": {
+        "campo obrigatorio vazio": 2
+      },
+      "verificacoes": [
+        {
+          "texto": "campo obrigatorio vazio",
+          "presente": true
+        },
+        {
+          "texto": "Nenhuma acao encontrada.",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T26",
+      "cenario": "Nova execucao inicia sem os dados da anterior",
+      "entrada": "2\n6\n",
+      "esperado": [
+        "Nenhuma acao cadastrada."
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Nenhuma acao cadastrada.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Nenhuma acao cadastrada.",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T27",
+      "cenario": "Datas de seculos e formato estrito",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n29/02/1900\n1/01/2026\n01/01/0000\n29/02/2000\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n2\n6\n",
+      "esperado": [
+        "data invalida",
+        "Data prevista: 29/02/2000"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Erro: data invalida. Use DD/MM/AAAA e uma data existente.\nData prevista (DD/MM/AAAA): Erro: data invalida. Use DD/MM/AAAA e uma data existente.\nData prevista (DD/MM/AAAA): Erro: data invalida. Use DD/MM/AAAA e uma data existente.\nData prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- LISTAGEM: 1 ACAO(OES) ---\n------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 29/02/2000\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {
+        "data invalida": 3
+      },
+      "contagens_observadas": {
+        "data invalida": 3
+      },
+      "verificacoes": [
+        {
+          "texto": "data invalida",
+          "presente": true
+        },
+        {
+          "texto": "Data prevista: 29/02/2000",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T28",
+      "cenario": "EOF em atualizacao incompleta encerra",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n1\n4\n101\n2\n",
+      "esperado": [
+        "Operacao incompleta nao confirmada"
+      ],
+      "ausencias_esperadas": [
+        "Sucesso: situacao atualizada"
+      ],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: ------------------------------------------------------------\nCodigo: 101 | Situacao: Planejada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 0\nNova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: \nEntrada encerrada (EOF). Operacao incompleta nao confirmada; sistema encerrado.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Operacao incompleta nao confirmada",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T29",
+      "cenario": "Percentual agregado ponderado entre realizadas",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n10\n2\n10\n1\n102\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n90\n2\n45\n5\n6\n",
+      "esperado": [
+        "Total de participacoes efetivas: 55",
+        "55.00%"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 2\nPlanejadas: 0 | Realizadas: 2 | Canceladas: 0\nPrevistos em todas as acoes: 100\nPrevistos nas realizadas: 100\nTotal de participacoes efetivas: 55\nParticipacao nas realizadas: 55.00%\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Total de participacoes efetivas: 55",
+          "presente": true
+        },
+        {
+          "texto": "55.00%",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    },
+    {
+      "id": "T30",
+      "cenario": "Realizada retorna diretamente para planejada",
+      "entrada": "1\n101\nEscola Horizonte\nSaude bucal\n10/10/2026\nTurmas do 6 ano\nEquipe IntegraPSE\n40\n2\n32\n4\n101\n1\n5\n6\n",
+      "esperado": [
+        "Planejadas: 1 | Realizadas: 0",
+        "Total de participacoes efetivas: 0",
+        "N/A"
+      ],
+      "ausencias_esperadas": [],
+      "observado": "PSE em Acao | IntegraPSE | Versao academica 2026/2\nUse somente dados ficticios e coletivos.\nOs dados ficam em memoria e serao perdidos ao encerrar.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- CADASTRAR ACAO ---\nCodigo (positivo): Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Participantes efetivos: Sucesso: acao cadastrada. Retornando ao menu.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Codigo para atualizar: ------------------------------------------------------------\nCodigo: 101 | Situacao: Realizada\nEscola: Escola Horizonte\nTema: Saude bucal\nData prevista: 10/10/2026\nPublico-alvo: Turmas do 6 ano\nResponsavel: Equipe IntegraPSE\nPrevistos: 40 | Efetivos: 32\nNova situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: situacao atualizada. Fora de Realizada, efetivos ficam em zero.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: \n--- RESUMO GERAL ---\nAcoes cadastradas: 1\nPlanejadas: 1 | Realizadas: 0 | Canceladas: 0\nPrevistos em todas as acoes: 40\nPrevistos nas realizadas: 0\nTotal de participacoes efetivas: 0\nParticipacao nas realizadas: N/A (previsao igual a zero).\nParticipacoes acumuladas; nao representam estudantes unicos.\n\n========== PSE EM ACAO ==========\n1 - Cadastrar acao\n2 - Listar acoes\n3 - Pesquisar acao\n4 - Atualizar situacao\n5 - Gerar resumo geral\n6 - Sair\nOpcao: Encerrando o sistema. Dados em memoria descartados.\n",
+      "stderr": "",
+      "retorno": 0,
+      "contagens_esperadas": {},
+      "contagens_observadas": {},
+      "verificacoes": [
+        {
+          "texto": "Planejadas: 1 | Realizadas: 0",
+          "presente": true
+        },
+        {
+          "texto": "Total de participacoes efetivas: 0",
+          "presente": true
+        },
+        {
+          "texto": "N/A",
+          "presente": true
+        }
+      ],
+      "resultado": "PASSOU"
+    }
+  ]
+}

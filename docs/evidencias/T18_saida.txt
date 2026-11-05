@@ -1,0 +1,42 @@
+PSE em Acao | IntegraPSE | Versao academica 2026/2
+Use somente dados ficticios e coletivos.
+Os dados ficam em memoria e serao perdidos ao encerrar.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 
+--- CADASTRAR ACAO ---
+Codigo (positivo): Escola: Erro: texto muito longo. Limite: 100 bytes.
+Escola: Tema: Data prevista (DD/MM/AAAA): Publico-alvo (coletivo): Responsavel (ficticio): Participantes previstos: Situacao [1 Planejada / 2 Realizada / 3 Cancelada]: Sucesso: acao cadastrada. Retornando ao menu.
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: 
+--- LISTAGEM: 1 ACAO(OES) ---
+------------------------------------------------------------
+Codigo: 101 | Situacao: Planejada
+Escola: Escola Horizonte
+Tema: Saude bucal
+Data prevista: 10/10/2026
+Publico-alvo: Turmas do 6 ano
+Responsavel: Equipe IntegraPSE
+Previstos: 40 | Efetivos: 0
+
+========== PSE EM ACAO ==========
+1 - Cadastrar acao
+2 - Listar acoes
+3 - Pesquisar acao
+4 - Atualizar situacao
+5 - Gerar resumo geral
+6 - Sair
+Opcao: Encerrando o sistema. Dados em memoria descartados.

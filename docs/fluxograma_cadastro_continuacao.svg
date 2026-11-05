@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="475" height="555" preserveAspectRatio="xMinYMin meet" viewBox="0 0 475 555" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="475" height="555"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-555)" style="clip-path: url(#clip)">
+		<g transform="">
+			<ellipse cx="240.0" cy="538.0" rx="50.0" ry="14.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,93%,89%); fill-rule: evenodd;"/>
+			<text x="236.921630859375" y="535.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,1070) scale(1,-1)">A</text>
+			<polygon points="162 504, 330 504, 318 472, 150 472" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="186.186767578125" y="485.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,970) scale(1,-1)">Ler quantidade prevista</text>
+			<polygon points="240 451, 330 429.5, 240 408, 150 429.5" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,94%,83%); fill-rule: evenodd;"/>
+			<text x="192.15673828125" y="426.5" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,853) scale(1,-1)">Inteiro não negativo?</text>
+			<rect x="10" y="410" width="115" height="39" rx="3" ry="0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="37.48974609375" y="426.5" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,853) scale(1,-1)">Informar erro</text>
+			<polygon points="162 386, 330 386, 318 354, 150 354" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="197.97509765625" y="367.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,734) scale(1,-1)">Ler situação inicial</text>
+			<polygon points="240 333, 330 311, 240 289, 150 311" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,94%,83%); fill-rule: evenodd;"/>
+			<text x="198.315673828125" y="308.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,616) scale(1,-1)">Situação de 1 a 3?</text>
+			<rect x="10" y="292" width="115" height="38" rx="3" ry="0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="37.48974609375" y="308.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,616) scale(1,-1)">Informar erro</text>
+			<polygon points="240 265, 330 243.5, 240 222, 150 243.5" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,94%,83%); fill-rule: evenodd;"/>
+			<text x="196.105224609375" y="240.5" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,481) scale(1,-1)">Situação realizada?</text>
+			<polygon points="162 200, 330 200, 318 168, 150 168" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="213.547119140625" y="181.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,362) scale(1,-1)">Ler efetivos</text>
+			<polygon points="240 147, 330 125, 240 103, 150 125" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,94%,83%); fill-rule: evenodd;"/>
+			<text x="192.15673828125" y="122.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,244) scale(1,-1)">Inteiro não negativo?</text>
+			<rect x="10" y="106" width="115" height="38" rx="3" ry="0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="37.48974609375" y="122.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,244) scale(1,-1)">Informar erro</text>
+			<rect x="145" y="44" width="190" height="35" rx="3" ry="0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(89%,93%,95%); fill-rule: evenodd;"/>
+			<text x="187.95556640625" y="58.5" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,117) scale(1,-1)">Armazenar e confirmar</text>
+			<ellipse cx="240.0" cy="14.0" rx="90.0" ry="14.0" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: rgb(85%,93%,89%); fill-rule: evenodd;"/>
+			<text x="194.47265625" y="11.0" style="font-family: DV; font-size: 9px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,22) scale(1,-1)">Retornar verdadeiro</text>
+			<polyline points="240 524, 240 504" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 510.3031, 240 504, 236.9552 510.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 472, 240 451" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 457.3031, 240 451, 236.9552 457.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 408, 240 386" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 392.3031, 240 386, 236.9552 392.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 354, 240 333" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 339.3031, 240 333, 236.9552 339.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 289, 240 265" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 271.3031, 240 265, 236.9552 271.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 222, 240 200" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 206.3031, 240 200, 236.9552 206.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 168, 240 147" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 153.3031, 240 147, 236.9552 153.3031" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 103, 240 79" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 85.30313, 240 79, 236.9552 85.30313" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="240 44, 240 28" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="243.0448 34.30313, 240 28, 236.9552 34.30313" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="150 430, 125 430" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="131.3031 426.9552, 125 430, 131.3031 433.0448" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<text x="129.109375" y="444" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,888) scale(1,-1)">Não</text>
+			<polyline points="67 449, 67 488, 150 488" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="143.6969 491.0448, 150 488, 143.6969 484.9552" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="150 311, 125 311" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="131.3031 307.9552, 125 311, 131.3031 314.0448" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<text x="129.109375" y="325" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,650) scale(1,-1)">Não</text>
+			<polyline points="67 330, 67 370, 150 370" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="143.6969 373.0448, 150 370, 143.6969 366.9552" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="150 125, 125 125" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="131.3031 121.9552, 125 125, 131.3031 128.0448" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<text x="129.109375" y="139" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,278) scale(1,-1)">Não</text>
+			<polyline points="67 144, 67 184, 150 184" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="143.6969 187.0448, 150 184, 143.6969 180.9552" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<text x="252.453125" y="394" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,788) scale(1,-1)">Sim</text>
+			<text x="252.453125" y="275" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,550) scale(1,-1)">Sim</text>
+			<text x="252.453125" y="208" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,416) scale(1,-1)">Sim</text>
+			<text x="252.453125" y="89" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,178) scale(1,-1)">Sim</text>
+			<polyline points="330 243, 435 243, 435 62, 335 62" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<polyline points="341.3031 58.95524, 335 62, 341.3031 65.04476" style="stroke: rgb(27%,39%,48%); stroke-linecap: butt; stroke-width: 1; fill: None; fill-rule: evenodd;"/>
+			<text x="356.142578125" y="259" style="font-family: DV; font-size: 8px;fill: rgb(9%,23%,33%); stroke:none;" transform="translate(0,518) scale(1,-1)">Não: efetivos = 0</text>
+		</g>
+	</g>
+</svg>
